@@ -16,7 +16,7 @@ syntax on
 set nobackup
 
 " Sync clipboard
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 " For plugins to load correctly
 filetype plugin indent on
@@ -50,7 +50,7 @@ set expandtab
 set noshiftround
 
 " Cursor motion
-set scrolloff=3
+set scrolloff=10
 set backspace=indent,eol,start
 set matchpairs+=<:> " use % to jump between pairs
 runtime! macros/matchit.vim

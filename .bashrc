@@ -1,3 +1,6 @@
+# Protect created files
+umask 0077
+
 export HISTCONTROL=ignoreboth:erasedups
 export HISTSIZE=10000
 shopt -s histappend
@@ -27,9 +30,9 @@ alias gh='history|grep'
 alias count='find . -type f | wc -l'
 
 # Show contents of the directory after changing to it
-function cd () {
-    builtin cd "$1"
-    ls -ACF
+function cd() {
+	builtin cd "$1"
+	ls -ACF
 }
 
 # Colour codes are cumbersome, so let's name them
@@ -42,6 +45,6 @@ txtrst='\[\e[0m\]'    # Text Reset
 pathC="${txtcyn}"
 userC="${txtpur}"
 pointerC="${txtwht}"
-normalC="${txtrst}" 
+normalC="${txtrst}"
 
 export PS1="${pathC}\w${normalC}\n${userC}\u ${pointerC}\$${normalC} "
