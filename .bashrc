@@ -46,12 +46,13 @@ export COLOR_LIGHT_GRAY='\e[0;37m'
 export COLOR_WHITE='\e[1;37m'
 
 # Which (C)olour for what part of the prompt?
-pathC="${COLOR_CYAN}"
-userC="${COLOR_RED}"
+pathC="${COLOR_LIGHT_CYAN}"
+userC="${COLOR_LIGHT_BLUE}"
+hostC="${COLOR_LIGHT_RED}"
 pointerC="${COLOR_YELLOW}"
 normalC="${COLOR_NC}"
 
-export PS1="${userC}\u ${pointerC}@ ${pathC}\w\n${pointerC}→${normalC} "
+export PS1="${userC}\u${pointerC}@${hostC}\h ${pathC}\w\n${pointerC}→${normalC} "
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
