@@ -22,7 +22,6 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 # set a fancy prompt (non-color, unless we know we "want" color)
-export TERM=xterm-color
 export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
