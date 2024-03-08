@@ -70,15 +70,9 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 nnoremap j gj
 nnoremap k gk
 
-" Remap joining lines and something else
-nnoremap <leader>J J
-nnoremap <leader>K K
-
 " Move faster
 nnoremap H ^
 nnoremap L $
-noremap J 5j
-noremap K 5k
 
 " Cursor highlight
 set ttimeoutlen=10
@@ -122,6 +116,10 @@ nnoremap Y y$
 " Center the cursor vertically when moving to the next word during a search
 nnoremap n nzz
 nnoremap N Nzz
+
+" Center the cursor vertically when moving up and down half-page
+nnoremap <c-u> <c-u>zz
+nnoremap <c-d> <c-d>zz
 
 " You can split the window in Vim by typing :split or :vsplit.
 " Navigate the split view easier by pressing CTRL+j, CTRL+k, CTRL+h, or
