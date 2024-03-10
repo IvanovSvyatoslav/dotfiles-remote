@@ -112,7 +112,10 @@ nnoremap Y y$
 " Use system clipboard
 noremap <Leader>y "+y
 nnoremap <Leader>Y "+y$
+noremap <Leader>d "+d
+nnoremap <Leader>D "+D
 noremap <Leader>p "+p
+noremap <Leader>P "+P
 
 " Center the cursor vertically when moving to the next word during a search
 nnoremap n nzz
