@@ -12,11 +12,7 @@ let g:netrw_home=$XDG_CACHE_HOME.'/vim'
 syntax on
 
 " Do not save backup files.
-"
 set nobackup
-
-" Sync clipboard
-set clipboard=unnamedplus
 
 " For plugins to load correctly
 filetype plugin indent on
@@ -112,6 +108,11 @@ map <leader><space> :nohl<CR>
 
 " Yank from cursor to the end of line
 nnoremap Y y$
+
+" Use system clipboard
+noremap <Leader>y "+y
+nnoremap <Leader>Y "+y$
+noremap <Leader>p "+p
 
 " Center the cursor vertically when moving to the next word during a search
 nnoremap n nzz
