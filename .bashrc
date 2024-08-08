@@ -18,7 +18,7 @@ shopt -s checkwinsize
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 if [ -f ~/.bash_aliases ]; then
-	. ~/.bash_aliases
+  . ~/.bash_aliases
 fi
 
 # set a fancy prompt (non-color, unless we know we "want" color)
@@ -44,22 +44,15 @@ export COLOR_LIGHT_CYAN='\e[1;36m'
 export COLOR_LIGHT_GRAY='\e[0;37m'
 export COLOR_WHITE='\e[1;37m'
 
-# Which (C)olour for what part of the prompt?
-pathC="${COLOR_LIGHT_CYAN}"
-userC="${COLOR_LIGHT_BLUE}"
-hostC="${COLOR_LIGHT_RED}"
-pointerC="${COLOR_YELLOW}"
-normalC="${COLOR_NC}"
-
-export PS1="${userC}\u${pointerC}@${hostC}\h ${pathC}\w\n${pointerC}→${normalC} "
+export PS1="\[\e[1;34m\]\u\[\e[1;33m\]@\[\e[1;31m\]\h \[\e[1;36m\]\w\n\[\e[1;33m\]→\[\e[0m\] "
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
 if ! shopt -oq posix; then
-	if [ -f /usr/share/bash-completion/bash_completion ]; then
-		. /usr/share/bash-completion/bash_completion
-	elif [ -f /etc/bash_completion ]; then
-		. /etc/bash_completion
-	fi
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
 fi
