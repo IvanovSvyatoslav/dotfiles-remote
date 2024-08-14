@@ -185,12 +185,12 @@ let g:EasyMotion_do_mapping = 0 " Disable default mappings
 map <Leader> <Plug>(easymotion-prefix)
 
 " <Leader>f{char} to move to {char}
-map  f <Plug>(easymotion-f)
-map  F <Plug>(easymotion-F)
+" map  f <Plug>(easymotion-f)
+" map  F <Plug>(easymotion-F)
 
 " Same for t
-map  t <Plug>(easymotion-t)
-map  T <Plug>(easymotion-T)
+" map  t <Plug>(easymotion-t)
+" map  T <Plug>(easymotion-T)
 
 " s{char}{char} to move to {char}{char}
 map z <Plug>(easymotion-f2)
@@ -220,3 +220,6 @@ omap / <Plug>(easymotion-tn)
 " different highlight method and have some other features )
 map  n <Plug>(easymotion-next)
 map  N <Plug>(easymotion-prev)
+
+" Automatically open write-protected files as write-enabled
+let g:suda_smart_edit = 1
