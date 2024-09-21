@@ -28,6 +28,6 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 # Show contents of the directory after changing to it
 function c() {
-	builtin cd "$1"
-	ls -ACF
+  __zoxide_z "$@"
+  ls -ACF
 }
