@@ -1,6 +1,3 @@
-# Protect created files
-umask 0077
-
 export HISTCONTROL=ignoreboth:erasedups
 export HISTSIZE=10000
 shopt -s histappend
