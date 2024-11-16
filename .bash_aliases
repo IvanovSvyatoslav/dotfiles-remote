@@ -15,16 +15,41 @@ alias mv='mv -v'
 alias mkdir='mkdir -pv'
 # Always try to (c)ontinue getting a partially-downloaded file
 alias wget='wget -c'
-
+# ping: stop after 5 pings
+alias ping="ping -c 5"
 # Find command in history
 alias gh='history|grep'
 
+# docker
+alias d='docker'
+alias dr='docker run'
+alias ds='docker start'
+alias dst='docker stop'
+alias drm='docker rm'
+alias dp='docker ps'
+alias dpa='docker ps -a'
+alias dpr='docker container prune'
+alias dl='docker logs'
+alias di='docker image'
+alias dipr='docker image prune'
+alias dipra='docker image prune -a'
+alias dils='docker image ls'
+alias dirm='docker image rm'
+alias dv='docker volume'
+alias dvpr='docker volume prune'
+alias dvpra='docker volume prune -a'
+alias dvls='docker volume ls'
+alias dvrm='docker volume rm'
+alias dc='docker compose'
+alias dcu='docker compose up'
+alias dcud='docker compose up -d'
+alias dcd='docker compose down'
+alias dcs='docker compose start'
+alias dcst='docker compose stop'
+alias dcl='docker compose logs'
+
 # Count files
 alias count='find . -type f | wc -l'
-
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # Show contents of the directory after changing to it
 function c() {
