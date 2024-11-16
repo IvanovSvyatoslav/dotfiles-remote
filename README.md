@@ -1,4 +1,10 @@
-# My dotfiles for remote development
+# Dotfiles for Remote Development
 
-requirements:
-bash, vim, tmux, stow, fzf, zoxide
+## Requirements
+
+- bash
+- vim
+- tmux
+- stow
+- fzf
+- zoxide
